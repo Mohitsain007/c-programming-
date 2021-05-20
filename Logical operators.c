@@ -1,15 +1,37 @@
+#include<stdio.h>
 int main()
 {
-    int a = 5, b = 10,ret;  
+	int a,b;
+	
+	printf("enter the first number\n ");
+	scanf("%d",&a);	
+	
+	printf("enter the second number\n ");
+	scanf("%d",&b);
+	
+	
+	
+	printf("(a==b)&&(a!=b)=%d\n",(a==b)&&(a!=b));
+		printf("(a==b)&&(a>b)=%d\n",(a==b)&&(a>b));
+			printf("(a>=b)&&(a>b)=%d\n",(a>=b)&&(a>b));
+				printf("(a<=b)&&(a<b)=%d\n",(a<=b)&&(a<b));
+				
+				
+					printf("(a==b)||(a!=b)=%d\n",(a==b)||(a!=b));
+		printf("(a==b)||(a>b)=%d\n",(a==b)||(a>b));
+			printf("(a>=b)||(a>b)=%d\n",(a>=b)||(a>b));
+				printf("(a<=b)||(a<b)=%d\n",(a<=b)||(a<b));
+				
+					printf("!(a!=b)=%d\n",!(a!=b));
+		printf("!(a>b)=%d\n",!(a>b));
+			printf("!(a>=b)=%d\n",!(a>=b));
+				printf("!(a<b)=%d\n",!(a<b));
 
-    ret = ( (a <= b) || (a != b) );
-    printf("return value of above expression is %d\n,ret);
-  
-    ret = ( (a < b) && (a == b) );
-    printf("return value of above expression is %d\n,ret");
+	
+	
+			
 
-    ret = ! ( (a < b) && (a == b) );
-    printf("return value of above expression is %d\n,ret");
-
-    return 0;
+			
+		return 0 ;
+	
 }
